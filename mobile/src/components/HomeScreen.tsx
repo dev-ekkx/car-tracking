@@ -1,8 +1,17 @@
+import useLocation from "@/hooks/useLocation";
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import LocationIcon from "./LocationIcon";
 
 const HomeScreen = () => {
+
+  const {errorMsg, longitude, latitude} = useLocation();
+
+  console.log("Longitude: ", longitude);
+  console.log("Latitude: ", latitude);
+  console.log("Error: ", errorMsg);
+
+  
   return (
     <View style={styles.container}>
       <LocationIcon />
