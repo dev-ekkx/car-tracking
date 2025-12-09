@@ -5,7 +5,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/components/*": ["./components/*"],
-      "@/hooks/*": ["./hooks/*"]
+      "@/hooks/*": ["./hooks/*"],
+      "@/context/*": ["./context/*"],
+      "@/constants/*": ["./constants/*"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
